@@ -1,0 +1,11 @@
+version: "3"
+services:
+  mypyweb:
+    build: ./
+    ports:
+      - "5001:5000"
+    container_name: app
+    volumes:
+      - ./:/app
+    tty: true
+
